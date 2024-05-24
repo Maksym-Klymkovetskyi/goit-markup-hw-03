@@ -27,6 +27,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+    min-width: 100px;
+}
+
 .container {
     width: 1158px;
     padding-left: 15px;
@@ -36,8 +41,17 @@ a {
 
 /*-----------HEADER--------------------*/
 .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
 .logo {
@@ -48,10 +62,16 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    margin-right: 76px;
 }
 
 .logo-part {
     color: #2e2f42;
+}
+
+.nav-list {
+    display: flex;
+    gap: 40px;
 }
 
 .nav-link {
@@ -60,6 +80,9 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: block;
 }
 
 .nav-link:hover,
@@ -69,6 +92,12 @@ a {
 
 .address {
     font-style: normal;
+    margin-left: auto;
+}
+
+.address-list {
+    display: flex;
+    gap: 40px;
 }
 
 .address-link {
@@ -97,6 +126,11 @@ a {
     padding-left: 472px;
 }
 
+.hero-title-container {
+    display: flex;
+    justify-content: center;
+}
+
 .hero-title {
     font-size: 56px;
     line-height: 1.07;
@@ -104,6 +138,7 @@ a {
     text-align: center;
     color: #fff;
     margin-bottom: 48px;
+    min-width: 496px;
 }
 
 .hero-btn {
@@ -114,7 +149,12 @@ a {
     letter-spacing: 0.04em;
     color: #fff;
     background-color: #4d5ae5;
+    border-radius: 4px;
+    border: none;
     cursor: pointer;
+    padding: 16px 32px;
+    display: block;
+    margin: 0 auto;
 }
 
 .hero-btn:hover,
@@ -127,7 +167,9 @@ a {
 /*-----------FEATURES---------------*/
 
 .features-container {
-    padding: 120px 156px;
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 130px;
 }
 
 .visually-hidden {
@@ -144,12 +186,22 @@ a {
     overflow: hidden;
 }
 
+.features-list {
+    display: flex;
+    gap: 24px;
+}
+
+.features-link {
+    width: calc((100% - 3 * 24px) / 4);
+}
+
 .features-best {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .features-text {
@@ -167,7 +219,8 @@ a {
 }
 
 .team-container {
-    padding: 120px 156px;
+   padding-top: 110px;
+   padding-bottom: 130px;
 }
 
 .team-title {
@@ -181,7 +234,18 @@ a {
 }
 
 .team-list {
-    background-color: #FFFFFF
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.team-link {
+    background-color: #FFFFFF;
+    border-radius: 0 0 4px 4px;
+}
+
+.team-photo {
+    margin-bottom: 32px;
 }
 
 .team-name {
@@ -191,6 +255,7 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .team-role {
@@ -198,16 +263,20 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
+    padding-bottom: 32px;
 }
 
 /*--------------------------------*/
 
 /*-----------PORTFOLIO---------------*/
 
-.portfolio {}
+.portfolio {
+    padding-top: 110px;
+    padding-bottom: 120px;
+}
 
 .portfolio-container {
-    padding: 120px 156px;
+    
 }
 
 .portfolio-title {
@@ -220,12 +289,33 @@ a {
     margin-bottom: 72px;
 }
 
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
+}
+
+.portfolio-link {
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+    width: calc((100% - 2 * 24px) / 3);
+    padding-bottom: 32px;
+}
+
+.portfolio-link-container {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+}
+
 .portfolio-name {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .portfolio-text {
@@ -243,10 +333,10 @@ a {
 }
 
 .footer-container {
-    padding-top: 100px;
-    padding-right: 1020px;
-    padding-bottom: 100px;
-    padding-left: 156px;
+   display: flex;
+   flex-direction: column;
+   gap: 16px;
+   padding: 100px 0;
 }
 
 .footer-logo {
@@ -257,7 +347,6 @@ a {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    margin-bottom: 16px;
 }
 
 .footer-logo-part {
