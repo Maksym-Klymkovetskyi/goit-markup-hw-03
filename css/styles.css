@@ -117,13 +117,12 @@ img {
 /*-----------HERO--------------------*/
 .hero {
     background-color: #2e2f42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-container {
-    padding-top: 188px;
-    padding-right: 472px;
-    padding-bottom: 188px;
-    padding-left: 472px;
+
 }
 
 .hero-title-container {
@@ -131,14 +130,14 @@ img {
     justify-content: center;
 }
 
-.hero-title {
+.hero-title-one {
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
     margin-bottom: 48px;
-    min-width: 496px;
+    max-width: 496px;
 }
 
 .hero-btn {
@@ -155,6 +154,7 @@ img {
     padding: 16px 32px;
     display: block;
     margin: 0 auto;
+    min-width: 169px;
 }
 
 .hero-btn:hover,
@@ -166,10 +166,13 @@ img {
 
 /*-----------FEATURES---------------*/
 
+.features {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
 .features-container {
     display: flex;
-    padding-top: 120px;
-    padding-bottom: 130px;
 }
 
 .visually-hidden {
@@ -216,11 +219,12 @@ img {
 
 .team {
     background-color: #f4f4fd;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-container {
-   padding-top: 110px;
-   padding-bottom: 130px;
+   
 }
 
 .team-title {
@@ -244,8 +248,12 @@ img {
     border-radius: 0 0 4px 4px;
 }
 
+.team-member-conteiner {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
 .team-photo {
-    margin-bottom: 32px;
 }
 
 .team-name {
@@ -263,7 +271,6 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     text-align: center;
-    padding-bottom: 32px;
 }
 
 /*--------------------------------*/
@@ -271,7 +278,7 @@ img {
 /*-----------PORTFOLIO---------------*/
 
 .portfolio {
-    padding-top: 110px;
+    padding-top: 120px;
     padding-bottom: 120px;
 }
 
@@ -296,17 +303,13 @@ img {
 }
 
 .portfolio-link {
-    border-bottom: 1px solid #e7e9fc;
-    border-left: 1px solid #e7e9fc;
-    border-right: 1px solid #e7e9fc;
+    border: 1px solid #e7e9fc;
     width: calc((100% - 2 * 24px) / 3);
     padding-bottom: 32px;
 }
 
 .portfolio-link-container {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    padding-left: 16px;
+    padding: 32px 16px;
 }
 
 .portfolio-name {
@@ -330,13 +333,11 @@ img {
 
 .footer {
     background-color: #2e2f42;
+    padding: 100px 0;
 }
 
 .footer-container {
-   display: flex;
-   flex-direction: column;
-   gap: 16px;
-   padding: 100px 0;
+  
 }
 
 .footer-logo {
@@ -347,6 +348,8 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-logo-part {
@@ -358,6 +361,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #f4f4fd;
+    max-width: 264px;
 }
 
 /*-------------------------------*/
