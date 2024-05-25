@@ -122,12 +122,9 @@ img {
 }
 
 .hero-container {
-
 }
 
 .hero-title-container {
-    /*display: flex;
-        justify-content: center;*/
 }
 
 .hero-title-one {
@@ -306,7 +303,6 @@ img {
 
 .portfolio-link {
     width: calc((100% - 2 * 24px) / 3);
-    padding-bottom: 32px;
 }
 
 .portfolio-link-container {
